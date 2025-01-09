@@ -1,3 +1,0 @@
-
-Secret = 'django-insecure-cu2)=36oka=c^uu7uoh@n27@g=5fx!omg2h!4j0bf9qt=t5!cl'
-OPENAI_API_KEY ='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'
