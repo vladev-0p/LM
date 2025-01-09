@@ -32,6 +32,12 @@ python manage.py migrate
 ## Run Server
 python manage.py runserver
 
+## Safety
 
+Create file secret.py with parameter Secret = <YOUR_DJANGO_SECRET_KEY>
+
+import file to the settings.py
+
+SECRET_KEY = Secret
 
 
