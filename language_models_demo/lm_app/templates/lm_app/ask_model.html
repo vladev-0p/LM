@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск по языковой модели</title>
+</head>
+<body>
+    <h1>Задайте ваш вопрос</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="query">Вопрос:</label>
+        <input type="text" id="query" name="query" required>
+        <button type="submit">Получить ответ</button>
+    </form>
+
+    {% if answer %}
+        <div>
+            <h2>Ответ:</h2>
+            <p>{{ answer }}</p>
+        </div>
+    {% endif %}
+</body>
+</html>
