@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./language_models_demo/db.sqlite3:/DJANGO_ML/language_models_demo/db.sqlite3                 # Монтируем папку с приложением
+    ports:
+      - "8000:8000"                  # Проброс порта

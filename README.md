@@ -40,4 +40,8 @@ import file to the settings.py
 
 SECRET_KEY = Secret
 
+## Docker 
+
+docker-compose up --build
+
 
